@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Satoshi', sans-serif;
+}
+body{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: white
+}
+.header{
+    background-color: black;
+    padding: 1%;
+}
+.header h1{
+    color: whitesmoke;
+}
+.title{
+    padding: 10px 0px;
+}
+.inp{
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+}
+.inp-plot{
+    margin: 0px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+}
+.inp-plot div{
+    padding: 5px 10px;
+    min-width: 100px;
+}
+.inp-val{
+    background-color: antiquewhite;
+    border:2px solid silver;
+    margin: 10px;
+    width:650px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+#field{
+    justify-content: center;
+    padding-top: 35px;
+    /* background-color: red; */
+}
+#field input{
+    width:250px
+}
+#field span{
+    /* padding-left: 100px; */
+    color: darkorange;
+    margin: 20px;
+}
+.btn{
+    border: 1px solid silver;
+    border-radius: 25px;
+    padding: 2px 10px 0px 10px;
+    width: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgb(220, 150, 70);
+}
+#disp{
+    min-height: 151px;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+}
+#err{
+    color: red;
+
+}
+#disp{
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

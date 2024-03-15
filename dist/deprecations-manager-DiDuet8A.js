@@ -1,0 +1,2 @@
+import{e}from"./core-D-4vWlgD.js";import{notify as o}from"./error-BppXsD3P.js";function r(){const e=document.querySelectorAll("script");for(const o of e)s(o.src)}function s(e){/\/pyscript\.net\/latest/.test(e)&&o("Loading scripts from latest is deprecated and will be removed soon. Please use a specific version instead.")}e.main.onReady.add(r),e.main.onWorker.add(r);
+//# sourceMappingURL=deprecations-manager-DiDuet8A.js.map

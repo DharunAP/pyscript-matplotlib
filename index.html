@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./dist/core.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Pyscript-Matplotlib</h1>
+    </div>
+    <div class="inp">
+        <div class="inp-plot" id="plt">
+            <h1 class="title" id="first">Choose your plot :</h1>
+            <div>
+                <input py-click="line" type="radio" name="plot-type" id="line" value="line">
+                <label for="line">Line chart</label>
+            </div>
+            <div>
+                <input py-click="line" type="radio" name="plot-type" id="scatter" value="scatter">
+                <label for="scatter">Scatter plot </label>
+            </div>
+            <div>
+                <input py-click="box" type="radio" name="plot-type" id="box" value="box">
+                <label for="box">Box plot</label>
+            </div>
+            <div>
+                <input py-click="box" type="radio" name="plot-type" id="pie" value="pie">
+                <label for="pie">Pie chart</label>
+            </div>
+            <div>
+                <input py-click="line" type="radio" name="plot-type" id="histogram" value="hist">
+                <label for="histogram">Histogram</label>
+            </div>
+        </div>
+        <span class="hidden" id="hidden"></span>
+        <div class="inp-val">
+            <span style="font-size: 30px; font-weight: 600;padding: 10px;">Inputs</span>
+            <div id="inp-container" style="padding: 75px 0px;opacity: 70%;">Select any plot type to enter inputs</div>
+            <div class="hidden" id="field" style="display: flex; flex-direction: column; align-items: space-between; height: 200px;">
+                <div style="padding-bottom: 15px;">
+                    <label class="grid">Grid<input style="width: 35px;" type="checkbox" id="grid"></label>
+                </div>
+                <div>
+                    <label for="x">x-axis Values : </label>
+                    <input type="text" id="x"><br>
+                </div>
+                <span class="desc" id="xlab"></span><br>
+                <div class="ydiv">
+                    <label for="y">y-axis Values : </label>
+                    <input type="text" id="y"><br>
+                </div>
+                <span class="desc ydiv" id="ylab"></span><br>
+                <a href="#disp" py-click="click" class="btn">Plot</a>
+                <span style="color: red;margin: 0;" id="err"></span>
+            </div>
+        </div>
+        
+
+        </div>
+    </div>
+    <div id="disp" style="margin: auto;">
+
+    </div>
+    <div class="header footer">
+        <h4 style="text-align: center;color: whitesmoke;">developed by <a href="https://github.com/DharunAP" target="_blank">@dharun</a></h4>
+    </div>
+    <!-- <div style="height: 750px;background-color: red;" id="nav"></div> -->
+    <script type="py" src="./main.py" config="./pyscript.json">
+    </script>
+</body>
+</html>
