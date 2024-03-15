@@ -22,6 +22,7 @@ def disp():
     pydom['span#err'].html = ""
     pydom['div.ydiv'][0].remove_class('hidden')
     pydom['span.ydiv'][0].remove_class('hidden')
+    pydom['label.grid'][0].remove_class('hidden')
 
 def line(event):
     pydom['span#hidden'][0].html = event.target.value
