@@ -76,11 +76,12 @@ a{
     background-color: rgb(220, 150, 70);
 }
 #disp{
-    min-height: 151px;
+    min-height: 87px;
 }
 .footer{
-    position: relative;
+    /* position: relative;
     bottom: 0;
+    width: 100%; */
 }
 #err{
     color: red;

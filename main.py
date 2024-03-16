@@ -9,6 +9,7 @@ xLable = pydom['span#xlab'][0]
 yLable = pydom['span#ylab'][0]
 res,lt = plt.subplots()
 pltType = ''
+lt.grid()
 # res,t = plt.subplots()
 def disp():
     val = pydom['div#inp-container'][0]
@@ -64,8 +65,9 @@ def click(x):
         else:
             lt.set_title(key+' plot')
             lt.hist(x)
-        print(x,y)
-        if(pydom['input#grid']):
+        print(pydom['input#grid'][0].html)
+        if(pydom['input#grid'][0].value=='on'):
+            print('in if')
             lt.grid()
         display(res,target='#disp')
     except Exception as e:
